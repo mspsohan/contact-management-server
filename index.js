@@ -13,7 +13,7 @@ connectDB();
 // Middleware
 app.use(express.json());
 app.use(cors({
-   origin: ["https://contact-management-sp.netlify.app", "http://localhost:5173"],
+   origin: ["https://contact-management-sp.netlify.app", "http://localhost:5173", "https://sp-contact-management.vercel.app"],
    optionsSuccessStatus: 200,
 }));
 

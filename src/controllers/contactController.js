@@ -20,7 +20,7 @@ const createContact = async (req, res) => {
 const getAllContacts = async (req, res) => {
    try {
       const contacts = await ContactModel.find();
-      res.status(200).send(contacts);
+      res.status(200).send({ contacts });
    } catch (error) {
       res.status(500).send({ error: error.message });
    }
